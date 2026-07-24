@@ -3,71 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>Anushka Dey — Creator Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#4facfe,#00f2fe);
+  :root{
+    --bg: #0a0708;
+    --bg-panel: #120d0e;
+    --border: #2a1f21;
+    --cream: #f2ece0;
+    --muted: #a99f97;
+    --red: #c8203f;
+    --gold: #e3b04b;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{
+    background: var(--bg);
+    color: var(--cream);
+    font-family:'Inter', sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  .serif{ font-family:'Playfair Display', serif; }
+
+  nav{
     display:flex;
-    justify-content:center;
     align-items:center;
-    height:100vh;
-}
-.card{
-    background:#fff;
-    width:380px;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
-h2{
-    color:#0b5ed7;
-    text-align:center;
-}
-.link{
-    background:#e8f9ff;
-    padding:10px;
-    border-radius:10px;
-    word-break:break-all;
-}
-a{
-    color:#008080;
-    text-decoration:none;
-    font-weight:bold;
-}
-.info{
-    margin-top:20px;
-    font-size:18px;
-}
-.info p{
-    margin:12px 0;
-}
-.footer{
-    text-align:center;
-    margin-top:20px;
-    color:#777;
-    font-size:14px;
-}
-</style>
-</head>
-<body>
-<div class="card">
-<h2>🌐 My Portfolio</h2>
-<div class="link">
-<a href="https://deyanamika746-hash.github.io/my-portfolio/" target="_blank">
-https://deyanamika746-hash.github.io/my-portfolio/
-</a>
-</div>
-<div class="info">
-<p><b>👩 Name:</b> Anushka Dey</p>
-<p><b>🆔 Enrollment:</b> YOUR ENROLLMENT_NUMBER</p>
-<p><b>📧 Email:</b> your@email.com</p>
-<p><b>📍 Location:</b> Assam, India</p>
-</div>
-<div class="footer">
-✨ Created by Anushka Dey✨
-</div>
-</div>
-</body>
-</html>
+    justify-content:space-between;
+    padding: 20px 22px;
+    border-bottom: 1px solid var(--border);
+    position:sticky;
+    top:0;
+    background: rgba(10,7,8,0.9);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+  }
+  .logo{
+    font-family:'Playfair Display', serif;
+    line-height:1.15;
+  }
+  .logo .l1{ color: var(--red); font-size:22px; font-weight:700; letter-spacing:1px; display:block; }
+  .logo .l2{ color: var(--cream); font-size:22px; font-weight:800; letter-spacing:1px; display:block; }
+  .nav-right{ display:flex; align-items:center; gap:14px; }
+  .pill{
+    background: linear-gradient(135deg, var(--gold), #c9922e);
+    color:#1a1206;
+    font-weight:700;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    line-height:1.3;
+    text-align:cen
